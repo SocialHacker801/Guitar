@@ -105,4 +105,24 @@ guitar/
   settings.py paths.py   persistence, long-path helpers
   gui/                   app window, widgets, icons, results table, inspector, panels
 tests/                   pytest suite (engine, state, details, reports, real Tk GUI tests)
+LICENSE                  MIT license
 ```
+
+## Contributing
+**Contributions are welcome!** Bug reports, feature ideas, documentation fixes and pull
+requests are all appreciated.
+
+1. Fork the repository and create a feature branch (`git checkout -b feature/my-change`).
+2. Set up the environment as described in *Windows PowerShell setup* above.
+3. Keep Guitar **read-only** with respect to user files and repositories — changes must never
+   write to SRC or DST, stage, commit or reset.
+4. Add or update tests for your change and make sure the whole suite passes
+   (`python -m pytest`, plus `python -m compileall -q guitar tests`).
+5. Keep colours, fonts and spacing in `guitar/theme.py` rather than hardcoding them in widgets.
+6. Open a pull request describing what changed and why. For larger changes, please open an
+   issue first to discuss the approach.
+
+When reporting a bug, include your OS, Python and Git versions, and the steps to reproduce.
+
+## License
+Released under the **MIT License** — see the [LICENSE](LICENSE) file for details.
