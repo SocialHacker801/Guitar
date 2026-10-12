@@ -1,0 +1,4 @@
+GitPython>=3.1.40
+pathspec>=0.12
+# Development / testing only:
+pytest>=7.4
